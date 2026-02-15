@@ -1,73 +1,143 @@
-# Welcome to your Lovable project
+MedReport AI — Medical Report & Image Explainer
+📌 Overview
 
-## Project info
+MedReport AI is an AI-powered medical report explanation platform designed to help users understand complex medical reports and imaging summaries in a clear, structured, and safe way.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+The system analyzes uploaded medical reports or scans and generates explanations in two specialized modes:
 
-## How can I edit this code?
+🧍 Patient Mode — Simple, reassuring explanations with plain language.
 
-There are several ways of editing your application.
+👩‍⚕️ Clinician Mode — Concise clinical summaries highlighting important findings.
 
-**Use Lovable**
+The goal is to bridge the communication gap between medical data and patient understanding while maintaining medical safety and educational transparency.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+🎯 Problem Statement
 
-Changes made via Lovable will be committed automatically to this repo.
+Medical reports often contain complex terminology that can be difficult for patients to understand. This leads to:
 
-**Use your preferred IDE**
+Anxiety and confusion
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Misinterpretation of results
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Poor communication between patients and doctors
 
-Follow these steps:
+MedReport AI addresses this by transforming technical medical information into understandable explanations while encouraging professional consultation.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+🚀 Key Features
+🧍 Patient Mode
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Easy-to-understand explanations
 
-# Step 3: Install the necessary dependencies.
-npm i
+Non-technical language
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Educational risk factors
 
-**Edit a file directly in GitHub**
+Reassuring tone
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Doctor consultation reminders
 
-**Use GitHub Codespaces**
+Safety-focused output (no diagnosis)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+👩‍⚕️ Clinician Mode
 
-## What technologies are used for this project?
+Structured clinical summaries
 
-This project is built with:
+Key observations extracted from reports
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Concise impressions
 
-## How can I deploy this project?
+Short, professional formatting
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+Designed for quick review
 
-## Can I connect a custom domain to my Lovable project?
+🧠 AI Capabilities
 
-Yes, you can!
+Retrieval-Augmented Generation (RAG)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Context-aware explanations
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Safety-focused prompt engineering
+
+Mode-based dynamic output generation
+
+🎨 Modern UI/UX
+
+Clean healthcare-inspired interface
+
+Mode switching between patient and clinician views
+
+Responsive design
+
+Fast interaction experience
+
+🧩 Tech Stack
+Frontend
+
+React + TypeScript
+
+Vite
+
+Tailwind CSS
+
+shadcn/ui components
+
+Backend / AI Layer
+
+Lovable AI Gateway
+
+LLM-based response generation
+
+Embedding-based RAG retrieval
+
+Data & Services
+
+Vector-based context retrieval
+
+Environment-based API key management
+
+🧠 System Architecture
+User Uploads Report/Image
+            ↓
+     Text Extraction / Parsing
+            ↓
+      Embedding Generation
+            ↓
+        Vector Retrieval (RAG)
+            ↓
+   Context + Prompt Engineering
+            ↓
+       LLM Response Generation
+            ↓
+ Patient Mode / Clinician Mode Output
+
+🔐 Safety & Ethical Design
+
+Because this project operates in the medical domain, safety was prioritized:
+
+❌ No diagnosis generation
+
+❌ No treatment recommendation
+
+✅ Educational-only explanations
+
+✅ Doctor consultation reminders
+
+✅ Transparent disclaimers
+
+💡 How It Works
+
+User uploads a medical report or scan.
+
+The system extracts relevant textual context.
+
+Embeddings are generated and searched using RAG.
+
+Relevant medical context is retrieved.
+
+The AI generates responses based on selected mode:
+
+Patient-friendly explanation
+
+Clinician-focused summary
+
+Output is displayed in structured cards for clarity.
